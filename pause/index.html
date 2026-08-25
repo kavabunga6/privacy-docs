@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Политика конфиденциальности приложения Пауза / Privacy Policy for Pause">
+  <meta name="robots" content="index,follow">
+  <title>Политика конфиденциальности — Пауза</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f7f3;
+      --surface: #ffffff;
+      --text: #1d211d;
+      --muted: #5f685f;
+      --line: #dce3da;
+      --accent: #5d7b24;
+      --accent-soft: #e9f2d8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111411;
+        --surface: #191d19;
+        --text: #eef2ec;
+        --muted: #b6beb4;
+        --line: #303730;
+        --accent: #b9d879;
+        --accent-soft: #263417;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.68;
+    }
+    main { width: min(860px, calc(100% - 32px)); margin: 32px auto 64px; }
+    header, article {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: clamp(24px, 5vw, 52px);
+    }
+    header { margin-bottom: 20px; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 750;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .mark { display: inline-flex; gap: 4px; }
+    .mark span { width: 5px; height: 18px; border-radius: 4px; background: currentColor; }
+    h1 { margin: 18px 0 8px; font-size: clamp(32px, 6vw, 52px); line-height: 1.08; letter-spacing: -.035em; }
+    h2 { margin: 38px 0 10px; font-size: 24px; line-height: 1.25; }
+    p, ul { margin: 10px 0 18px; }
+    ul { padding-left: 24px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .date, .muted { color: var(--muted); }
+    .summary {
+      margin-top: 26px;
+      padding: 18px 20px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    nav a {
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 650;
+    }
+    article + article { margin-top: 20px; }
+    footer { padding: 24px 8px 0; color: var(--muted); text-align: center; font-size: 14px; }
+    @media (max-width: 520px) {
+      main { width: min(100% - 20px, 860px); margin-top: 10px; }
+      header, article { border-radius: 18px; padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand"><span class="mark" aria-hidden="true"><span></span><span></span></span>Пауза · Pause</div>
+      <h1>Политика конфиденциальности</h1>
+      <p class="date">Дата вступления в силу: 25 августа 2026 года</p>
+      <p class="summary">«Пауза» работает без аккаунта, рекламы, аналитики, облачной синхронизации и серверов разработчика. Данные приложения остаются на устройстве.</p>
+      <nav aria-label="Выбор языка"><a href="#ru">Русский</a><a href="#en">English</a></nav>
+    </header>
+
+    <article id="ru" lang="ru">
+      <h2>О политике</h2>
+      <p>Настоящая политика описывает обработку данных в Android-приложении «Пауза» (<code>app.gateway.focus</code>). Разработчик не получает, не продаёт и не передаёт данные приложения третьим лицам.</p>
+
+      <h2>Какие данные используются на устройстве</h2>
+      <p>Для работы функций приложение локально хранит:</p>
+      <ul>
+        <li>выбранные пользователем приложения;</li>
+        <li>время начала и окончания активной фокус-сессии;</li>
+        <li>длительность фокуса и настройки интерфейса;</li>
+        <li>количество остановленных открытий и статистику по дням и приложениям;</li>
+        <li>временное разрешение открыть выбранное приложение;</li>
+        <li>состояние онбординга и показа подсказок.</li>
+      </ul>
+      <p>Эти сведения не отправляются разработчику и не используются для рекламы или создания профиля пользователя.</p>
+
+      <h2>Специальные возможности Android</h2>
+      <p>Пользователь может добровольно включить службу специальных возможностей, чтобы «Пауза» определяла, какое приложение находится на переднем плане во время активной фокус-сессии. Если открыто выбранное отвлекающее приложение, «Пауза» показывает экран с вопросом о цели открытия.</p>
+      <p>Служба не получает содержимое окон, не читает текст, сообщения, уведомления, пароли или нажатия клавиш, не делает снимки экрана и не выполняет действия от имени пользователя. Имя открытого приложения обрабатывается только на устройстве и не передаётся разработчику или третьим лицам. Доступ можно отключить в настройках специальных возможностей Android.</p>
+
+      <h2>Уведомления и режим «Не беспокоить»</h2>
+      <p>Разрешение на уведомления используется для постоянного таймера фокуса и сообщения о завершении сессии. Доступ к режиму «Не беспокоить» используется только по выбору пользователя, чтобы приглушить уведомления на время фокуса и восстановить прежнее состояние после завершения.</p>
+
+      <h2>Отображение поверх других приложений</h2>
+      <p>Необязательное системное разрешение «Поверх других приложений» используется только для небольшого перемещаемого таймера. Таймер не анализирует и не сохраняет содержимое под ним. Функцию и разрешение можно отключить в любой момент.</p>
+
+      <h2>Передача данных и внешние ссылки</h2>
+      <p>Приложение не запрашивает разрешение на доступ в интернет и не передаёт пользовательские данные на серверы разработчика. При переходе по добровольной ссылке поддержки открывается внешний сайт Boosty в браузере или его приложении; дальнейшая обработка регулируется политикой Boosty.</p>
+
+      <h2>Резервное копирование Android</h2>
+      <p>В зависимости от настроек устройства Android может включать локальные настройки приложения в системную резервную копию пользователя. Этот процесс выполняется операционной системой и выбранным пользователем поставщиком резервного копирования. Разработчик приложения не получает доступа к такой копии.</p>
+
+      <h2>Хранение и удаление</h2>
+      <p>Данные хранятся на устройстве, пока пользователь не очистит данные приложения или не удалит приложение. Отдельного аккаунта и серверной копии не существует, поэтому запрос на удаление аккаунта не требуется.</p>
+
+      <h2>Дети</h2>
+      <p>Приложение не предназначено специально для детей и не собирает сведения о возрасте.</p>
+
+      <h2>Изменения политики</h2>
+      <p>Если возможности приложения или способы обработки данных изменятся, политика будет обновлена до публикации соответствующей версии. Актуальная дата указывается в начале страницы.</p>
+
+      <h2>Контакты</h2>
+      <p>По вопросам конфиденциальности: <a href="mailto:devkondrashin@gmail.com">devkondrashin@gmail.com</a>.</p>
+    </article>
+
+    <article id="en" lang="en">
+      <h2>Privacy Policy for Pause</h2>
+      <p class="date">Effective date: August 25, 2026</p>
+      <p>This policy explains how the Pause Android application (<code>app.gateway.focus</code>) handles data. Pause works without an account, advertising, analytics SDKs, cloud sync, or developer-operated servers. App data is processed and stored locally on the device. The developer does not receive, sell, or share this data with third parties.</p>
+
+      <h2>Data used on the device</h2>
+      <p>To provide its features, Pause locally stores apps selected by the user, focus session start and end times, focus duration and interface preferences, counts and statistics of paused openings, temporary permission to open an app, and onboarding or help prompt state. This information is not sent to the developer and is not used for advertising or user profiling.</p>
+
+      <h2>Android Accessibility Service</h2>
+      <p>The user may voluntarily enable an Accessibility Service so Pause can identify which app is in the foreground during an active focus session. When a selected distracting app is opened, Pause displays a screen asking why the user is opening it.</p>
+      <p>The service cannot retrieve window content. It does not read text, messages, notifications, passwords, or keystrokes, take screenshots, or perform actions on the user's behalf. The foreground app name is processed only on the device and is not sent to the developer or third parties. The user can disable access at any time in Android Accessibility settings.</p>
+
+      <h2>Notifications and Do Not Disturb</h2>
+      <p>Notification permission is used for the ongoing focus countdown and the focus-complete notification. Do Not Disturb access is optional and is used only when requested by the user to quiet notifications during a focus session and restore the previous state afterward.</p>
+
+      <h2>Display over other apps</h2>
+      <p>The optional Display over other apps permission is used only for a small movable countdown timer. The timer does not inspect or save content underneath it. The feature and permission can be disabled at any time.</p>
+
+      <h2>Data transmission and external links</h2>
+      <p>Pause does not request internet access and does not transmit user data to developer-operated servers. If the user follows the optional support link, the external Boosty website opens in a browser or its app; subsequent data handling is governed by Boosty's privacy policy.</p>
+
+      <h2>Android backup</h2>
+      <p>Depending on device settings, Android may include local app preferences in the user's system backup. This process is controlled by the operating system and the user's chosen backup provider. The app developer cannot access that backup.</p>
+
+      <h2>Retention and deletion</h2>
+      <p>Data remains on the device until the user clears the app's storage or uninstalls the app. There is no account or server copy, so no account deletion request is required.</p>
+
+      <h2>Children</h2>
+      <p>Pause is not specifically directed to children and does not collect age information.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If the app's functionality or data handling changes, this policy will be updated before the corresponding version is released. The current effective date appears at the top of this page.</p>
+
+      <h2>Contact</h2>
+      <p>Privacy questions: <a href="mailto:devkondrashin@gmail.com">devkondrashin@gmail.com</a>.</p>
+    </article>
+
+    <footer>Pause · app.gateway.focus</footer>
+  </main>
+</body>
+</html>
