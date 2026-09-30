@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Scribio privacy policy / Политика конфиденциальности Scribio">
+  <title>Scribio — Privacy Policy / Политика конфиденциальности</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      --background: #f6f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f7f8fc;
+      --text: #22283a;
+      --muted: #5d667b;
+      --line: #e3e7f0;
+      --accent: #5048c6;
+      --accent-soft: #eeedfc;
+      --shadow: 0 18px 50px rgba(39, 45, 79, .07);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse 700px 360px at 50% -130px, rgba(111, 100, 236, .14), transparent 75%),
+        var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--accent); text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+    .page { width: min(100% - 36px, 900px); margin: 0 auto; padding: 54px 0 80px; }
+    .hero { padding: 8px 4px 32px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-size: .88rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+    .brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; background: var(--accent); color: #fff; }
+    h1 { max-width: 780px; margin: 22px 0 15px; font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.12; letter-spacing: -.045em; }
+    .meta { margin: 0; color: var(--muted); font-size: .95rem; }
+    .meta + .meta { margin-top: 4px; }
+    .language-nav { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 29px; }
+    .language-nav a { display: inline-flex; align-items: center; min-height: 42px; padding: 8px 17px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text); font-weight: 650; text-decoration: none; box-shadow: 0 4px 14px rgba(39, 45, 79, .035); }
+    .language-nav a:hover { border-color: var(--accent); color: var(--accent); }
+    .language-nav a::after { content: "↓"; margin-left: 10px; color: var(--accent); }
+    .policy { margin-top: 24px; padding: clamp(24px, 5vw, 48px); border: 1px solid var(--line); border-radius: 24px; background: var(--surface); box-shadow: var(--shadow); scroll-margin-top: 20px; }
+    .policy-header { display: flex; align-items: center; gap: 13px; padding-bottom: 23px; border-bottom: 1px solid var(--line); }
+    .language-code { display: inline-grid; place-items: center; min-width: 42px; height: 32px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); font-size: .76rem; font-weight: 750; letter-spacing: .08em; }
+    h2 { margin: 0; font-size: 1.6rem; line-height: 1.25; letter-spacing: -.025em; }
+    h3 { margin: 0 0 11px; font-size: 1.16rem; line-height: 1.35; letter-spacing: -.012em; }
+    .topic { padding: 25px 0 0; }
+    .topic + .topic { margin-top: 25px; border-top: 1px solid var(--line); }
+    p { margin: 0 0 14px; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: 0 0 16px; padding-left: 1.4rem; }
+    li + li { margin-top: 7px; }
+    code { padding: .1em .35em; border-radius: 5px; background: var(--surface-soft); font-size: .87em; overflow-wrap: anywhere; }
+    .footer { padding: 32px 4px 0; color: var(--muted); font-size: .9rem; }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #11131d;
+        --surface: #1b1e2b;
+        --surface-soft: #272b3a;
+        --text: #f1f2f8;
+        --muted: #afb7cb;
+        --line: #33394a;
+        --accent: #b3adff;
+        --accent-soft: #302c51;
+        --shadow: 0 18px 50px rgba(0, 0, 0, .17);
+      }
+      .brand-mark { background: #756ced; }
+      .language-nav a { box-shadow: none; }
+    }
+    @media (max-width: 600px) {
+      .page { width: min(100% - 24px, 900px); padding-top: 32px; }
+      .hero { padding: 0 6px 21px; }
+      .policy { margin-top: 14px; border-radius: 18px; }
+      .topic { padding-top: 21px; }
+      .topic + .topic { margin-top: 21px; }
+      h2 { font-size: 1.4rem; }
+    }
+    @media print {
+      :root { color-scheme: light; }
+      html { scroll-behavior: auto; }
+      body { background: white; }
+      .page { width: 100%; padding: 0; }
+      .language-nav { display: none; }
+      .policy { box-shadow: none; border: 0; border-radius: 0; padding: 10px 0; break-inside: avoid-page; }
+      .policy + .policy { break-before: page; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">◖◗</span> Scribio</div>
+      <h1>Scribio — Privacy Policy / Политика конфиденциальности</h1>
+      <p class="meta">Effective date / Дата вступления в силу: 30 September 2026 / 30 сентября 2026 г.</p>
+      <p class="meta">Published page / Опубликованная страница: <a href="https://kavabunga6.github.io/privacy-docs/scribio/">https://kavabunga6.github.io/privacy-docs/scribio/</a></p>
+      <nav class="language-nav" aria-label="Choose language / Выберите язык">
+        <a href="#english" lang="en">English</a>
+        <a href="#russian" lang="ru">Русский</a>
+      </nav>
+    </header>
+
+    <article class="policy" id="english" lang="en" aria-labelledby="english-title">
+      <div class="policy-header"><span class="language-code" aria-hidden="true">EN</span><h2 id="english-title">English</h2></div>
+
+      <section class="topic">
+        <h3>Developer and contact</h3>
+        <p>Scribio (<code>ru.kava.voicer</code>) is an Android speech-to-text app developed by Nikolay Kondrashin (<a href="https://github.com/kavabunga6">@kavabunga6</a>). For privacy questions, email <a href="mailto:devkondrashin@gmail.com">devkondrashin@gmail.com</a>.</p>
+      </section>
+
+      <section class="topic">
+        <h3>What the app accesses and stores</h3>
+        <p>Scribio records audio when you start a recording. You can also choose an audio file or send one to Scribio from another app. The app copies imported audio into its private storage. It stores the recording title, date, duration, audio file, and transcript on your device, and transcribes speech there using a local model. The developer does not receive your audio or transcripts. Scribio has no account, advertising, analytics, crash-reporting SDK, or developer-operated cloud service.</p>
+        <p>The app also stores settings on your device, including theme, languages, selected speech model, and any folder-monitoring choices.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Optional folder monitoring</h3>
+        <p>If you select a folder for automatic import, you grant Scribio read access to that folder. The app checks it and its subfolders when opened and periodically in the background (about every 15 minutes). It copies new audio files into its private storage and, if the automatic transcription option is on, transcribes those copies on your device. It does not delete the original files. Turning off folder monitoring stops future scans and releases the folder permission; previously imported copies remain until you delete them in Scribio or clear its data.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Internet and external services</h3>
+        <p>Scribio connects to <a href="https://huggingface.co/">Hugging Face</a> only if you choose to download an optional speech model. The download uses HTTPS. The model host and its delivery providers may receive ordinary request information, such as your IP address, as described in <a href="https://huggingface.co/privacy">their privacy terms</a>. Scribio does not send audio, transcripts, or app settings with a model request. The bundled model and models imported from your own files work without a download.</p>
+        <p>Scribio does not automatically share your audio or transcripts. If you tap <strong>Copy</strong>, Android receives the transcript in its clipboard; if you tap <strong>Share</strong>, the transcript is passed to the app you select. The handling of copied or shared text depends on Android and that other app.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Permissions and security</h3>
+        <ul>
+          <li><strong>Microphone:</strong> records audio when you ask the app to record.</li>
+          <li><strong>Selected folder access:</strong> reads a folder you choose for optional automatic import.</li>
+          <li><strong>Internet:</strong> downloads an optional model when you request it.</li>
+          <li><strong>Notifications and foreground service:</strong> show transcription progress or completion and allow long tasks to continue in the background.</li>
+        </ul>
+        <p>Audio, transcripts, and settings are held in Android's private app storage. Android backup is disabled for Scribio. Model downloads use HTTPS. Scribio does not sell your data.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Retention and deletion</h3>
+        <p>Recordings, transcripts, settings, and downloaded models remain on your device until you delete them or clear the app's data. Deleting a recording in Scribio removes its local audio copy and transcript. Uninstalling Scribio removes its private app storage. Original audio files outside Scribio and any text you copied or shared must be managed in their respective locations. Since the developer does not receive app content, there is no server-side copy of it to delete.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Children and changes</h3>
+        <p>Scribio is a general-purpose transcription tool and is not directed to children. If data practices change materially, this page and its effective date will be updated.</p>
+      </section>
+    </article>
+
+    <article class="policy" id="russian" lang="ru" aria-labelledby="russian-title">
+      <div class="policy-header"><span class="language-code" aria-hidden="true">RU</span><h2 id="russian-title">Русский</h2></div>
+
+      <section class="topic">
+        <h3>Разработчик и контакт</h3>
+        <p>Scribio (<code>ru.kava.voicer</code>) — приложение для расшифровки речи на Android. Разработчик — Nikolay Kondrashin (<a href="https://github.com/kavabunga6">@kavabunga6</a>). По вопросам конфиденциальности: <a href="mailto:devkondrashin@gmail.com">devkondrashin@gmail.com</a>.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Какие данные приложение использует и хранит</h3>
+        <p>Scribio записывает звук, когда вы запускаете запись. Вы также можете выбрать аудиофайл или передать его из другого приложения. Импортированный файл копируется в закрытое хранилище Scribio. Название, дата, длительность записи, аудиофайл и текст расшифровки хранятся на устройстве. Расшифровка выполняется локальной моделью. Разработчик не получает ваши аудиозаписи и расшифровки. В Scribio нет аккаунта, рекламы, аналитики, SDK отчётов о сбоях или облачного сервиса разработчика.</p>
+        <p>Настройки также хранятся на устройстве: тема, языки, выбранная модель и параметры наблюдения за папкой.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Необязательное наблюдение за папкой</h3>
+        <p>Если вы выбираете папку для автоматического импорта, вы предоставляете Scribio доступ к ней на чтение. Приложение проверяет папку и её подпапки при открытии и периодически в фоне (примерно каждые 15 минут). Новые аудиофайлы копируются в закрытое хранилище приложения и, если включена соответствующая опция, расшифровываются на устройстве. Исходные файлы не удаляются. При отключении наблюдения дальнейшие проверки прекращаются, а доступ к папке отзывается. Ранее импортированные копии остаются до удаления в Scribio или очистки данных приложения.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Интернет и внешние сервисы</h3>
+        <p>Scribio обращается к <a href="https://huggingface.co/">Hugging Face</a>, только если вы решите скачать дополнительную речевую модель. Загрузка выполняется по HTTPS. Сайт и поставщики доставки файлов могут получить обычные данные сетевого запроса, например IP-адрес; их обработка регулируется <a href="https://huggingface.co/privacy">их правилами конфиденциальности</a>. Scribio не отправляет аудио, расшифровки и настройки при загрузке модели. Встроенная модель и модели, импортированные из ваших файлов, работают без скачивания.</p>
+        <p>Scribio не передаёт аудио или расшифровки автоматически. При нажатии <strong>«Копировать»</strong> текст помещается в системный буфер обмена Android. При нажатии <strong>«Поделиться»</strong> текст передаётся выбранному вами приложению. Дальнейшая обработка скопированного или отправленного текста зависит от Android и другого приложения.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Разрешения и защита</h3>
+        <ul>
+          <li><strong>Микрофон:</strong> запись звука по вашему запросу.</li>
+          <li><strong>Доступ к выбранной папке:</strong> чтение файлов для необязательного автоматического импорта.</li>
+          <li><strong>Интернет:</strong> загрузка дополнительной модели по вашему запросу.</li>
+          <li><strong>Уведомления и фоновая служба:</strong> показ хода или завершения расшифровки и продолжение длительной задачи в фоне.</li>
+        </ul>
+        <p>Аудио, расшифровки и настройки находятся в закрытом хранилище приложения Android. Резервное копирование Android для Scribio отключено. Модели загружаются по HTTPS. Scribio не продаёт ваши данные.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Срок хранения и удаление</h3>
+        <p>Записи, расшифровки, настройки и загруженные модели остаются на устройстве, пока вы не удалите их или не очистите данные приложения. Удаление записи в Scribio удаляет её локальную копию и расшифровку. Удаление Scribio удаляет его закрытое хранилище. Исходные аудиофайлы вне Scribio и текст, который вы скопировали или отправили, нужно удалять в соответствующих местах. Разработчик не получает содержимое приложения, поэтому серверной копии для удаления нет.</p>
+      </section>
+
+      <section class="topic">
+        <h3>Дети и изменения</h3>
+        <p>Scribio — универсальный инструмент расшифровки и не предназначен специально для детей. При существенном изменении обработки данных эта страница и дата вступления в силу будут обновлены.</p>
+      </section>
+    </article>
+
+    <footer class="footer">Scribio · <a href="#english" lang="en">English</a> / <a href="#russian" lang="ru">Русский</a></footer>
+  </main>
+</body>
+</html>
