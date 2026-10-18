@@ -102,7 +102,7 @@
     <header class="hero">
       <div class="brand"><span class="brand-mark" aria-hidden="true">◖◗</span> Scribio</div>
       <h1>Scribio — Privacy Policy / Политика конфиденциальности</h1>
-      <p class="meta">Effective date / Дата вступления в силу: 10 October 2026 / 10 октября 2026 г.</p>
+      <p class="meta">Effective date / Дата вступления в силу: 18 October 2026 / 18 октября 2026 г.</p>
       <p class="meta">Published page / Опубликованная страница: <a href="https://kavabunga6.github.io/privacy-docs/scribio/">https://kavabunga6.github.io/privacy-docs/scribio/</a></p>
       <nav class="language-nav" aria-label="Choose language / Выберите язык">
         <a href="#english" lang="en">English</a>
@@ -122,6 +122,7 @@
         <h3>What the app accesses and stores</h3>
         <p>Scribio records audio when you start a recording. You can also choose an audio file or send one to Scribio from another app. The app copies imported audio into its private storage. It stores the recording title, date, duration, audio file, and transcript on your device, and transcribes speech there using a local model. The developer does not receive your audio or transcripts. Scribio has no account, advertising, analytics, crash-reporting SDK, or developer-operated cloud service.</p>
         <p>The app also stores settings on your device, including theme, languages, selected speech model, and any folder-monitoring choices.</p>
+        <p>When you start recording, Scribio uses an Android microphone foreground service so capture can continue if you lock the screen or switch apps. Android may still interrupt the service or recording. In that case Scribio attempts to retain the available local audio and warns if the file duration differs from the earlier estimate; it cannot guarantee that every part of the recording was saved.</p>
       </section>
 
       <section class="topic">
@@ -133,6 +134,7 @@
         <h3>Internet and external services</h3>
         <p>Scribio connects to <a href="https://huggingface.co/">Hugging Face</a> only if you choose to download an optional transcription model or the multilingual voice pack. The download uses HTTPS. The model host and its delivery providers may receive ordinary request information, such as your IP address, as described in <a href="https://huggingface.co/privacy">their privacy terms</a>. Scribio does not send audio, transcripts, or app settings with a model request. The bundled transcription model and models imported from your own files work without a download. The optional voice pack is about 145 MB, is verified before installation, and remains in private app storage until you delete it or clear app data.</p>
         <p>Scribio does not automatically share your audio or transcripts. If you tap <strong>Copy</strong>, Android receives the transcript in its clipboard; if you tap <strong>Share</strong>, the transcript is passed to the app you select. The handling of copied or shared text depends on Android and that other app.</p>
+        <p>If you tap <strong>Save original audio</strong>, Android asks where to save a copy of the recording. The destination may be a local folder or a storage provider you choose; that provider handles the exported copy under its own terms. The recording inside Scribio stays in place.</p>
         <p>If you request speech playback, including <strong>Transcribe and speak</strong>, and have downloaded the optional multilingual voice pack, Scribio synthesizes the transcript on your device. No text or audio is sent to the voice model host during playback. Otherwise, Scribio passes the text to the text-to-speech engine installed on your device and selects a voice that the engine marks as usable without a network connection. That engine's handling of the text depends on its provider and settings. Scribio does not send it to a developer-operated service.</p>
         <p>The downloaded voice saves synthesized playback audio in the app's private temporary cache so you can replay the same text without processing it again. Re-transcribing clears that cached audio. Android may also clear temporary cache when it needs space.</p>
         <p>The About screen links to <a href="https://github.com/kavabunga6">GitHub</a> and, outside Google Play builds, optional <a href="https://boosty.to/kavabunga6">Boosty support</a>. The rating action opens the app's store page. These destinations open only when you tap them; Scribio adds no audio, transcript, settings, or tracking identifiers to their URLs. The destination may receive ordinary request information under its own privacy terms. Boosty support is voluntary and separate from technical support.</p>
@@ -144,7 +146,7 @@
           <li><strong>Microphone:</strong> records audio when you ask the app to record.</li>
           <li><strong>Selected folder access:</strong> reads a folder you choose for optional automatic import.</li>
           <li><strong>Internet:</strong> downloads an optional model when you request it.</li>
-          <li><strong>Notifications and foreground service:</strong> show transcription progress or completion and allow long tasks to continue in the background.</li>
+          <li><strong>Notifications and foreground service:</strong> support a recording that you started and long transcription tasks in the background. When notification permission and system settings allow, they show recording status and transcription progress or completion. Android also provides a microphone-use indicator.</li>
         </ul>
         <p>Audio, transcripts, and settings are held in Android's private app storage. Android backup is disabled for Scribio. Model downloads use HTTPS. Scribio does not sell your data.</p>
       </section>
@@ -172,6 +174,7 @@
         <h3>Какие данные приложение использует и хранит</h3>
         <p>Scribio записывает звук, когда вы запускаете запись. Вы также можете выбрать аудиофайл или передать его из другого приложения. Импортированный файл копируется в закрытое хранилище Scribio. Название, дата, длительность записи, аудиофайл и текст расшифровки хранятся на устройстве. Расшифровка выполняется локальной моделью. Разработчик не получает ваши аудиозаписи и расшифровки. В Scribio нет аккаунта, рекламы, аналитики, SDK отчётов о сбоях или облачного сервиса разработчика.</p>
         <p>Настройки также хранятся на устройстве: тема, языки, выбранная модель и параметры наблюдения за папкой.</p>
+        <p>После запуска записи Scribio использует фоновую службу Android с доступом к микрофону, чтобы запись могла продолжаться при блокировке экрана или переходе в другое приложение. Android всё равно может прервать работу службы или запись. В таком случае Scribio пытается сохранить доступное локальное аудио и предупреждает, если длительность файла расходится с прежней оценкой; сохранение всей записи не гарантируется.</p>
       </section>
 
       <section class="topic">
@@ -183,6 +186,7 @@
         <h3>Интернет и внешние сервисы</h3>
         <p>Scribio обращается к <a href="https://huggingface.co/">Hugging Face</a>, только если вы решите скачать дополнительную модель расшифровки или многоязычный голосовой пакет. Загрузка выполняется по HTTPS. Сайт и поставщики доставки файлов могут получить обычные данные сетевого запроса, например IP-адрес; их обработка регулируется <a href="https://huggingface.co/privacy">их правилами конфиденциальности</a>. Scribio не отправляет аудио, расшифровки и настройки при загрузке модели. Встроенная модель расшифровки и модели, импортированные из ваших файлов, работают без скачивания. Необязательный голосовой пакет занимает около 145 МБ, проходит проверку целостности перед установкой и хранится в закрытом хранилище приложения до удаления или очистки его данных.</p>
         <p>Scribio не передаёт аудио или расшифровки автоматически. При нажатии <strong>«Копировать»</strong> текст помещается в системный буфер обмена Android. При нажатии <strong>«Поделиться»</strong> текст передаётся выбранному вами приложению. Дальнейшая обработка скопированного или отправленного текста зависит от Android и другого приложения.</p>
+        <p>При нажатии <strong>«Сохранить исходное аудио»</strong> Android предложит выбрать место для копии записи. Это может быть папка на устройстве или выбранное вами хранилище; обработка экспортированной копии зависит от его правил. Запись внутри Scribio останется на месте.</p>
         <p>Если вы запускаете озвучивание, в том числе действие <strong>«Расшифровать и озвучить»</strong>, и скачали многоязычный голосовой пакет, Scribio синтезирует речь на устройстве. Во время озвучивания текст и звук не передаются сайту модели. Иначе Scribio передаёт текст установленному на устройстве движку синтеза речи и выбирает голос, который движок помечает как работающий без сети. Обработка текста этим движком зависит от его поставщика и настроек. Scribio не отправляет текст в сервис разработчика.</p>
         <p>Скачанный голос сохраняет созданный звук во временном закрытом кэше приложения, чтобы повторно воспроизводить тот же текст без нового синтеза. Повторная расшифровка удаляет этот кэш. Android также может очищать временный кэш при нехватке места.</p>
         <p>В разделе «О приложении» есть ссылки на <a href="https://github.com/kavabunga6">GitHub</a> и, вне сборки Google Play, на <a href="https://boosty.to/kavabunga6">добровольную поддержку через Boosty</a>. Кнопка оценки открывает страницу приложения в магазине. Эти страницы открываются только после вашего нажатия; Scribio не добавляет в ссылки аудио, расшифровки, настройки или идентификаторы отслеживания. Сайт назначения может получить обычные данные запроса и применяет собственные правила конфиденциальности. Поддержка на Boosty добровольна и не заменяет техническую поддержку.</p>
@@ -194,7 +198,7 @@
           <li><strong>Микрофон:</strong> запись звука по вашему запросу.</li>
           <li><strong>Доступ к выбранной папке:</strong> чтение файлов для необязательного автоматического импорта.</li>
           <li><strong>Интернет:</strong> загрузка дополнительной модели по вашему запросу.</li>
-          <li><strong>Уведомления и фоновая служба:</strong> показ хода или завершения расшифровки и продолжение длительной задачи в фоне.</li>
+          <li><strong>Уведомления и фоновая служба:</strong> поддерживают уже начатую запись и длительную расшифровку в фоне. Если разрешены уведомления и позволяют системные настройки, они показывают состояние записи и ход или завершение расшифровки. Android также показывает системную индикацию использования микрофона.</li>
         </ul>
         <p>Аудио, расшифровки и настройки находятся в закрытом хранилище приложения Android. Резервное копирование Android для Scribio отключено. Модели загружаются по HTTPS. Scribio не продаёт ваши данные.</p>
       </section>
